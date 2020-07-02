@@ -1,0 +1,5 @@
+package org.luckymod.discord;
+
+public class RPCManager {
+
+}

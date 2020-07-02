@@ -1,0 +1,37 @@
+package test;
+
+import club.minnced.discord.rpc.DiscordEventHandlers;
+import club.minnced.discord.rpc.DiscordRPC;
+import club.minnced.discord.rpc.DiscordRichPresence;
+
+public class Main {
+	public static void main(String[] args) {
+		DiscordEventHandlers handlers = new DiscordEventHandlers();
+		handlers.ready = (user) ->{
+			System.out.println("Olá "+user.username + "#" + user.discriminator + "!");
+		};
+		handlers.errored = (code,error) ->{System.out.println(code + ": " + error);};
+		handlers.disconnected = (code,error) -> {System.out.println(code + ": " + error);};
+		handlers.joinRequest = (user) -> {};
+		handlers.joinGame = (ip) -> {};
+		handlers.spectateGame = (token) -> {};
+		DiscordRPC.INSTANCE.Discord_Initialize("718033700733976596",handlers, true, "");
+		DiscordRichPresence presence = new DiscordRichPresence();
+		presence.state = "teste";
+		presence.largeImageKey = "logo";
+		presence.largeImageText = "Teste";
+		presence.startTimestamp = System.currentTimeMillis() / 1000;
+		DiscordRPC.INSTANCE.Discord_UpdatePresence(presence);
+		DiscordRPC.INSTANCE.Discord_UpdateConnection();
+		while(!Thread.currentThread().isInterrupted()) {
+			DiscordRPC.INSTANCE.Discord_RunCallbacks();
+			System.out.println("callback runned");
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+package org.luckymod.discord;
+
+import club.minnced.discord.rpc.DiscordRichPresence;
+
+public class LuckyModPresence extends DiscordRichPresence {
+
+}

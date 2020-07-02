@@ -1,0 +1,16 @@
+{
+    "versions":[
+        {
+            "name":"LuckyMod 1.1",
+            "versionMajor": 1,
+            "versionMinor": 1,
+            "download": "/versions/luckymod-1.1.tar.gz"
+        },
+        {
+            "versionMajor": 1,
+            "versionMinor": 2,
+            "name":"LuckyMod 1.2",
+            "download": "/versions/luckymod-1.2.tar.gz"
+        }
+    ]
+}

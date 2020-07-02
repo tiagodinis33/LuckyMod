@@ -1,0 +1,13 @@
+.downloads{
+    color:black;
+}
+.link{
+    color: blue;
+    line-height: normal;
+}
+.body{
+    left: 0%;
+    top: -60pt;
+    -ms-transform: translate(0%, 60pt);
+    transform: translate(0%, 60pt);
+}

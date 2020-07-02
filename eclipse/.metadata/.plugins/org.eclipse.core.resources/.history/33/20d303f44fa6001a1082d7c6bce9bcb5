@@ -1,0 +1,10 @@
+package org.luckymod.discord;
+
+import club.minnced.discord.rpc.DiscordRPC;
+
+public class RPCManager {
+	static DiscordRPC rpc = DiscordRPC.INSTANCE
+	static {
+		
+	}
+}

@@ -1,0 +1,15 @@
+package org.luckymod.discord;
+
+import club.minnced.discord.rpc.DiscordRichPresence;
+
+public class LuckyModPresence extends DiscordRichPresence {
+	public LuckyModPresence(String description) {
+		startTimestamp = System.currentTimeMillis() / 1000;
+		details = description;
+		this.largeImageKey = "lucky-mod";
+		this.largeImageText = "LuckyMod";
+	}
+	public void apply() {
+		RPCManager.setPresence(this);
+	}
+}

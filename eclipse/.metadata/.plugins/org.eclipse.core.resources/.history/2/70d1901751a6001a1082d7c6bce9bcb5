@@ -1,0 +1,37 @@
+package org.luckymod.discord;
+
+import club.minnced.discord.rpc.DiscordRPC;
+
+public class RPCManager {
+	static DiscordRPC rpc = DiscordRPC.INSTANCE;
+	private static Thread rpcThread = new Thread(() -> {
+        while (!Thread.currentThread().isInterrupted()) {
+            rpc.Discord_RunCallbacks();
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException ignored) {}
+        }
+    }, "Discord-Integration");
+	private static boolean isRunning;
+	static {
+		if(!isRunning) {
+			loop();
+			isRunning = true;
+		}
+	}
+	public static void stop() {
+		try {
+			rpcThread.join();
+			rpcThread.interrupt();
+			isRunning = false;
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	private static void loop() {
+		rpcThread.start();
+    }
+}
+

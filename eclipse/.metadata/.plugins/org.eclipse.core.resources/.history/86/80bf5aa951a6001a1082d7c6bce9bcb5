@@ -1,0 +1,46 @@
+package org.luckymod.discord;
+
+import club.minnced.discord.rpc.DiscordEventHandlers;
+import club.minnced.discord.rpc.DiscordRPC;
+import club.minnced.discord.rpc.DiscordRichPresence;
+
+public class RPCManager {
+	public static final String APP_ID = "718033700733976596";
+	static DiscordRichPresence presence = new DiscordRichPresence();
+	static DiscordRPC rpc = DiscordRPC.INSTANCE;
+	static DiscordEventHandlers handlers = new DiscordEventHandlers();
+	private static Thread rpcThread = new Thread(() -> {
+        while (!Thread.currentThread().isInterrupted()) {
+            rpc.Discord_RunCallbacks();
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException ignored) {}
+        }
+    }, "Discord-Integration");
+	private static boolean isRunning;
+	static {
+		if(!isRunning) {
+			loop();
+			isRunning = true;
+		}
+	}
+
+	public static void setPresence(DiscordRichPresence presence) {
+		
+	}
+	public static void stop() {
+		try {
+			rpcThread.join();
+			rpcThread.interrupt();
+			isRunning = false;
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	private static void loop() {
+		rpcThread.start();
+    }
+}
+

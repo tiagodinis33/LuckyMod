@@ -1,0 +1,196 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "args": "--username tiagodinis_",
+            "cwd": "${workspaceFolder}/jars",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Start<Client>",
+            "args": "--username tiagodinis_",
+            "request": "launch",
+            "mainClass": "Start",
+            "projectName": "Client",
+
+            "cwd": "${workspaceFolder}/jars",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        
+        },
+        {
+            "type": "java",
+            "args": "--username tiagodinis_",
+
+            "cwd": "${workspaceFolder}/jars",
+            "name": "Debug (Launch)-VersionInfo<Client>",
+            "request": "launch",
+            "mainClass": "com.ibm.icu.util.VersionInfo",
+            "projectName": "Client",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        
+        },
+        {
+            "type": "java",
+            "args": "--username tiagodinis_",
+
+            "cwd": "${workspaceFolder}/jars",
+            "name": "Debug (Launch)-ChainingExample<Client>",
+            "request": "launch",
+            "mainClass": "com.jcraft.jorbis.ChainingExample",
+            "projectName": "Client",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        
+        },
+        {
+            "type": "java",
+            "cwd": "${workspaceFolder}/jars",
+            "args": "--username tiagodinis_",
+            "name": "Debug (Launch)-DecodeExample<Client>",
+            "request": "launch",
+            "mainClass": "com.jcraft.jorbis.DecodeExample",
+            "projectName": "Client",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        
+        },
+        {
+            "type": "java",
+            "cwd": "${workspaceFolder}/jars",
+            "args": "--username tiagodinis_",
+            "name": "Debug (Launch)-Native<Client>",
+            "request": "launch",
+            "mainClass": "com.sun.jna.Native",
+            "projectName": "Client",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        
+        },
+        {
+            "type": "java",
+            "cwd": "${workspaceFolder}/jars",
+            "args": "--username tiagodinis_",
+            "name": "Debug (Launch)-Version<Client>",
+            "request": "launch",
+            "mainClass": "io.netty.util.Version",
+            "projectName": "Client",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        
+        },
+        {
+            "type": "java",
+            "args": "--username tiagodinis_",
+            "cwd": "${workspaceFolder}/jars",
+            "name": "Debug (Launch)-Main<Client>",
+            "request": "launch",
+            "mainClass": "net.minecraft.client.main.Main",
+            "projectName": "Client",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        
+        },
+        {
+            "type": "java",
+            "args": "--username tiagodinis_",
+            "cwd": "${workspaceFolder}/jars",
+            "name": "Debug (Launch)-CacheObjectArray<Client>",
+            "request": "launch",
+            "mainClass": "optfine.CacheObjectArray",
+            "projectName": "Client",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        
+        },
+        {
+            "type": "java",
+            "cwd": "${workspaceFolder}/jars",
+            "args": "--username tiagodinis_",
+            "name": "Debug (Launch)-Lister<Client>",
+            "request": "launch",
+            "mainClass": "org.apache.commons.compress.archivers.Lister",
+            "projectName": "Client",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        
+        },
+        {
+            "type": "java",
+            "args": "--username tiagodinis_",
+            "cwd": "${workspaceFolder}/jars",
+            "name": "Debug (Launch)-PluginManager<Client>",
+            "request": "launch",
+            "mainClass": "org.apache.logging.log4j.core.config.plugins.PluginManager",
+            "projectName": "Client",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        
+        },
+        {
+            "type": "java",
+            "cwd": "${workspaceFolder}/jars",
+            "args": "--username tiagodinis_",
+            "name": "Debug (Launch)-JMSQueueReceiver<Client>",
+            "request": "launch",
+            "mainClass": "org.apache.logging.log4j.core.net.JMSQueueReceiver",
+            "projectName": "Client",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        
+        },
+        {
+            "type": "java",
+            "cwd": "${workspaceFolder}/jars",
+            "args": "--username tiagodinis_",
+            "name": "Debug (Launch)-JMSTopicReceiver<Client>",
+            "request": "launch",
+            "mainClass": "org.apache.logging.log4j.core.net.JMSTopicReceiver",
+            "projectName": "Client",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        
+        },
+        {
+            "type": "java",
+            "args": "--username tiagodinis_",
+            "cwd": "${workspaceFolder}/jars",
+            "name": "Debug (Launch)-SocketServer<Client>",
+            "request": "launch",
+            "mainClass": "org.apache.logging.log4j.core.net.SocketServer",
+            "projectName": "Client",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        
+        },
+        {
+            "type": "java",
+            "args": "--username tiagodinis_",
+            "cwd": "${workspaceFolder}/jars",
+            "name": "Debug (Launch)-UDPSocketServer<Client>",
+            "request": "launch",
+            "mainClass": "org.apache.logging.log4j.core.net.UDPSocketServer",
+            "projectName": "Client",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        
+        },
+        {
+            "type": "java",
+            "args": "--username tiagodinis_",
+            "cwd": "${workspaceFolder}/jars",
+            "name": "Debug (Launch)-XPMFile<Client>",
+            "request": "launch",
+            "mainClass": "org.lwjgl.util.XPMFile",
+            "projectName": "Client",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        
+        },
+        {
+            "args": "--username tiagodinis_",
+            "type": "java",
+            "cwd": "${workspaceFolder}/jars",
+            "name": "Debug (Launch)-CacheLineSize<Client>",
+            "request": "launch",
+            "mainClass": "org.lwjgl.util.mapped.CacheLineSize",
+            "projectName": "Client",
+            "vmArgs": "-Djava.library.path=/home/tiago/Desktop/LuckyMod/eclipse/Client/jars/versions/1.10/1.10-natives"
+        
+        }
+    ]
+}

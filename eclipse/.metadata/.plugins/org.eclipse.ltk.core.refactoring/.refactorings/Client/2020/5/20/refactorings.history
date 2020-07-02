@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;net.minecraft.client.gui.GuiScreen.onRender(...)&apos; to &apos;drawScreen&apos;&#x0A;- Original project: &apos;Client&apos;&#x0A;- Original element: &apos;net.minecraft.client.gui.GuiScreen.onRender(...)&apos;&#x0A;- Renamed element: &apos;net.minecraft.client.gui.GuiScreen.drawScreen(...)&apos;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;onRender&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;net.minecraft.client.gui{GuiScreen.java[GuiScreen~onRender~I~I~F" name="drawScreen" references="true" stamp="1589741202650" version="1.0"/>
+</session>

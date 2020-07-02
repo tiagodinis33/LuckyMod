@@ -1,0 +1,29 @@
+package test;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.InputStreamReader;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+
+import club.minnced.discord.rpc.DiscordEventHandlers;
+import club.minnced.discord.rpc.DiscordRPC;
+import club.minnced.discord.rpc.DiscordRichPresence;
+
+public class Main {
+	public static void main(String[] args) {
+		BufferedReader libReaderDll =
+				new BufferedReader(new InputStreamReader(Main.class.getResourceAsStream("/natives/discord_game_sdk/discord_game_sdk.dll")));
+		BufferedReader libReaderlinux =
+				new BufferedReader(new InputStreamReader(Main.class.getResourceAsStream("/natives/discord_game_sdk/discord_game_sdk.so")));
+		if(System.getProperty("os.name") == "Linux") {
+			File dir = new File("natives/");
+			dir.mkdir();
+			dir.deleteOnExit();
+			File extractedLib = new File("natives/discord_game_sdk.so");
+			Files.copy(libReaderlinux, Paths.get(extractedLib.toURI()), StandardCopyOption.REPLACE_EXISTING);
+		}
+	}
+}

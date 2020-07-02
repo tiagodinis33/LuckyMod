@@ -1,0 +1,108 @@
+h1,h2,h3,h4,h5,h6,p,li,span,a {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-variant: normal;
+}
+li {
+  float: left;
+}
+li,.nava {
+  display: block;
+  color:white;
+  padding: 0pt 0px;
+  margin: -2px 5px;
+  line-height: 50px;
+  font-size: 14px;
+  
+}
+.nava{
+  transform: translate(30px, -0px);
+}
+.nava:hover {
+  background-color: aliceblue;
+  color: green;
+}
+a{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+/*ficar verde com o tempo...*/
+
+/*definiçoes do menu*/
+.menu{ 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;  
+  background-color: #333;
+  margin-top: -10pt;
+  margin-left: -8pt;
+  margin-right: -8px;
+}
+/*texto do titulo*/
+.texto{
+    color:white;
+    margin: 0;
+    font-size: 70px;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    -ms-transform: 
+    translate(-45%, -70%);
+    transform: translate(-45%, -70%);
+}
+.texto-subtitulo{
+  font-size: 50px;
+}
+/*cor de fundo e definiçoes*/
+.background{
+    margin-top: 0pt;/*cima*/
+    margin-left: -8pt;/*direita*/
+    margin-right: -8px;/*esquerda*/
+    margin-bottom: 70px;/*embaixo*/
+    top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /*mudar o brilho da imagem*/
+    height: 91vh;
+}
+
+.idented{
+  margin-left: 1.5em ;
+}
+.background:after{
+  margin-top: 0pt;/*cima*/
+    margin-left: -8pt;/*direita*/
+    margin-right: -8px;/*esquerda*/
+    margin-bottom: 0pt;/*embaixo*/
+  content: "";
+  position: absolute;/*declara a posição abisuluta*/
+  background-image: url("/imagens/icon_32x32.png");/*link da imagem*/
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0%;
+  height: 92vh;
+
+  z-index: -1;
+  background-color:black;
+}
+.logo{
+  width: 250px;
+  height: 250px;
+  margin: 0;
+    font-size: 70px;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    -ms-transform: translate(30%, -10%);
+    transform: translate(30%, -10%);
+    position: absolute;
+}

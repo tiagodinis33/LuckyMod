@@ -1,0 +1,59 @@
+package org.luckymod.discord;
+
+import org.apache.logging.log4j.LogManager;
+
+import com.sun.jna.Native;
+
+import net.minecraft.client.Minecraft;
+
+public class RPCManager {
+	public static final String APP_ID = "718033700733976596";
+	static LuckyModPresence presence;
+	private static Thread rpcThread = new Thread(() -> {
+		init();
+		while (!Thread.currentThread().isInterrupted()) {
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException ignored) {
+			}
+		}
+	}, "Discord-Integration");
+	private static boolean isRunning;
+	static {
+		if (!isRunning) {
+			loop();
+			isRunning = true;
+		}
+	}
+
+	private static void init() {
+		presence = new LuckyModPresence("Iniciando...");
+		updatePresence();
+	}
+
+	public static void setPresence(LuckyModPresence presence) {
+		RPCManager.presence = presence;
+		updatePresence();
+	}
+
+	public static void updatePresence() {
+	}
+
+	public static void stop() {
+		try {
+			rpcThread.join();
+			rpcThread.interrupt();
+			isRunning = false;
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+	
+	public static void connect() {}
+	
+	private static void loop() {
+		rpcThread.start();
+	}
+}

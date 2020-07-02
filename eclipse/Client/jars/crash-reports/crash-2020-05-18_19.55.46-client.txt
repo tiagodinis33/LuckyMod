@@ -1,0 +1,71 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 18-05-2020 19:55
+Description: Rendering screen
+
+java.lang.NullPointerException: Rendering screen
+	at net.minecraft.client.gui.GuiMainMenu.drawScreen(GuiMainMenu.java:528)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1373)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1182)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:449)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.minecraft.client.gui.GuiMainMenu.drawScreen(GuiMainMenu.java:528)
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.client.gui.GuiMainMenu
+	Mouse location: Scaled: (357, 239). Absolute: (714, 0)
+	Screen size: Scaled: (427, 240). Absolute: (854, 480). Scale factor of 2
+Stacktrace:
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1373)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1182)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:449)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.10
+	Operating System: Linux (amd64) version 5.3.0-51-generic
+	Java Version: 1.8.0_252, Private Build
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+	Memory: 814175920 bytes (776 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Launched Version: 1.10
+	LWJGL: 2.9.4
+	OpenGL: Mesa DRI Intel(R) HD Graphics 405 (Braswell)  GL version 3.0 Mesa 19.2.8, Intel Open Source Technology Center
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: Português (Portugal)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Pentium(R) CPU J3710 @ 1.60GHz
+	OptiFine Version: OptiFine_1.10_HD_U_C1
+	Render Distance Chunks: 12
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 3.0 Mesa 19.2.8
+	OpenGlRenderer: Mesa DRI Intel(R) HD Graphics 405 (Braswell) 
+	OpenGlVendor: Intel Open Source Technology Center
+	CpuCount: 4

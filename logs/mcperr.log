@@ -1,0 +1,907 @@
+19:32:02 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+19:32:46 - '"javac" -Xlint:-options -deprecation -g -source 1.6 -target 1.6 -classpath "jars/versions/1.10/1.10.jar:lib:lib/*:jars/libraries/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar:jars/libraries/net/java/jinput/jinput/2.0.5/jinput-2.0.5.jar:jars/libraries/org/lwjgl/lwjgl/lwjgl-platform/2.9.4-nightly-20150209/lwjgl-platform-2.9.4-nightly-20150209-natives-linux.jar:jars/libraries/com/ibm/icu/icu4j-core-mojang/51.2/icu4j-core-mojang-51.2.jar:jars/libraries/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:jars/libraries/org/apache/logging/log4j/log4j-api/2.0-beta9/log4j-api-2.0-beta9.jar:jars/libraries/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:jars/libraries/net/java/dev/jna/jna/3.4.0/jna-3.4.0.jar:jars/libraries/com/paulscode/libraryjavasound/20101123/libraryjavasound-20101123.jar:jars/libraries/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:jars/libraries/com/google/guava/guava/17.0/guava-17.0.jar:jars/libraries/oshi-project/oshi-core/1.1/oshi-core-1.1.jar:jars/libraries/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar:jars/libraries/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar:jars/libraries/it/unimi/dsi/fastutil/7.0.12_mojang/fastutil-7.0.12_mojang.jar:jars/libraries/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar:jars/libraries/com/paulscode/codecjorbis/20101023/codecjorbis-20101023.jar:jars/libraries/com/paulscode/soundsystem/20120107/soundsystem-20120107.jar:jars/libraries/com/paulscode/librarylwjglopenal/20100824/librarylwjglopenal-20100824.jar:jars/libraries/org/lwjgl/lwjgl/lwjgl_util/2.9.4-nightly-20150209/lwjgl_util-2.9.4-nightly-20150209.jar:jars/libraries/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:jars/libraries/net/java/jutils/jutils/1.0.0/jutils-1.0.0.jar:jars/libraries/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:jars/libraries/org/lwjgl/lwjgl/lwjgl/2.9.4-nightly-20150209/lwjgl-2.9.4-nightly-20150209.jar:jars/libraries/commons-io/commons-io/2.4/commons-io-2.4.jar:jars/libraries/com/mojang/realms/1.9.1/realms-1.9.1.jar:jars/libraries/com/mojang/authlib/1.5.22/authlib-1.5.22.jar:jars/libraries/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:jars/libraries/com/mojang/netty/1.6/netty-1.6.jar:jars/libraries/com/paulscode/codecwav/20101023/codecwav-20101023.jar:jars/libraries/net/java/jinput/jinput-platform/2.0.5/jinput-platform-2.0.5-natives-linux.jar:jars/libraries/org/apache/logging/log4j/log4j-core/2.0-beta9/log4j-core-2.0-beta9.jar:jars/libraries/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.jar" -sourcepath src/minecraft -d bin/minecraft @temp/java_src_client.txt' failed : 1
+19:32:46 - 
+19:32:46 - == ERRORS FOUND in JAVA CODE ==
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/client/renderer/Matrix4f.java:3: error: package org.lwjgl.util.vector does not exist
+19:32:46 - public class Matrix4f extends org.lwjgl.util.vector.Matrix4f
+19:32:46 -                                                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/EnumFacing.java:3: error: package com.google.common.base does not exist
+19:32:46 - import com.google.common.base.Predicate;
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/EnumFacing.java:4: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Iterators;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/EnumFacing.java:5: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Maps;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/EnumFacing.java:365: error: cannot find symbol
+19:32:46 -     public static enum Axis implements Predicate<EnumFacing>, IStringSerializable {
+19:32:46 -                                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Predicate
+19:32:46 -   location: class EnumFacing
+19:32:46 - src/minecraft/net/minecraft/util/math/Vec3i.java:3: error: package com.google.common.base does not exist
+19:32:46 - import com.google.common.base.Objects;
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/math/Vec3i.java:4: error: package javax.annotation.concurrent does not exist
+19:32:46 - import javax.annotation.concurrent.Immutable;
+19:32:46 -                                   ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/math/Vec3i.java:6: error: cannot find symbol
+19:32:46 - @Immutable
+19:32:46 -  ^
+19:32:46 - 
+19:32:46 -   symbol: class Immutable
+19:32:46 - src/minecraft/net/minecraft/util/EnumFacing.java:452: error: cannot find symbol
+19:32:46 -     public static enum Plane implements Predicate<EnumFacing>, Iterable<EnumFacing> {
+19:32:46 -                                         ^
+19:32:46 - 
+19:32:46 -   symbol:   class Predicate
+19:32:46 -   location: class EnumFacing
+19:32:46 - src/minecraft/net/minecraftforge/common/model/TRSRTransformation.java:4: error: package org.apache.commons.lang3 does not exist
+19:32:46 - import org.apache.commons.lang3.NotImplementedException;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraftforge/common/model/IModelState.java:3: error: package com.google.common.base does not exist
+19:32:46 - import com.google.common.base.Optional;
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraftforge/common/model/IModelState.java:7: error: cannot find symbol
+19:32:46 -     Optional<TRSRTransformation> apply(Optional <? extends IModelPart > var1);
+19:32:46 -                                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Optional
+19:32:46 -   location: interface IModelState
+19:32:46 - src/minecraft/net/minecraftforge/common/model/IModelState.java:7: error: cannot find symbol
+19:32:46 -     Optional<TRSRTransformation> apply(Optional <? extends IModelPart > var1);
+19:32:46 -     ^
+19:32:46 - 
+19:32:46 -   symbol:   class Optional
+19:32:46 -   location: interface IModelState
+19:32:46 - src/minecraft/net/minecraft/client/renderer/vertex/VertexFormat.java:3: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Lists;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/client/renderer/vertex/VertexFormat.java:5: error: package org.apache.logging.log4j does not exist
+19:32:46 - import org.apache.logging.log4j.LogManager;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/client/renderer/vertex/VertexFormat.java:6: error: package org.apache.logging.log4j does not exist
+19:32:46 - import org.apache.logging.log4j.Logger;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/client/renderer/vertex/VertexFormat.java:10: error: cannot find symbol
+19:32:46 -     private static final Logger LOGGER = LogManager.getLogger();
+19:32:46 -                          ^
+19:32:46 - 
+19:32:46 -   symbol:   class Logger
+19:32:46 -   location: class VertexFormat
+19:32:46 - src/minecraft/net/minecraft/client/renderer/vertex/VertexFormatElement.java:3: error: package org.apache.logging.log4j does not exist
+19:32:46 - import org.apache.logging.log4j.LogManager;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/client/renderer/vertex/VertexFormatElement.java:4: error: package org.apache.logging.log4j does not exist
+19:32:46 - import org.apache.logging.log4j.Logger;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/client/renderer/vertex/VertexFormatElement.java:8: error: cannot find symbol
+19:32:46 -     private static final Logger LOGGER = LogManager.getLogger();
+19:32:46 -                          ^
+19:32:46 - 
+19:32:46 -   symbol:   class Logger
+19:32:46 -   location: class VertexFormatElement
+19:32:46 - src/minecraft/net/minecraft/init/MobEffects.java:3: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/potion/Potion.java:3: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Maps;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/potion/Potion.java:7: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/util/registry/RegistryNamespaced.java:3: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.BiMap;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/registry/RegistryNamespaced.java:4: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.HashBiMap;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/registry/RegistryNamespaced.java:7: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/util/registry/RegistrySimple.java:3: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Maps;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/registry/RegistrySimple.java:10: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/util/registry/RegistrySimple.java:11: error: package org.apache.commons.lang3 does not exist
+19:32:46 - import org.apache.commons.lang3.Validate;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/registry/RegistrySimple.java:12: error: package org.apache.logging.log4j does not exist
+19:32:46 - import org.apache.logging.log4j.LogManager;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/registry/RegistrySimple.java:13: error: package org.apache.logging.log4j does not exist
+19:32:46 - import org.apache.logging.log4j.Logger;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/registry/IRegistry.java:4: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/util/ResourceLocation.java:3: error: package org.apache.commons.lang3 does not exist
+19:32:46 - import org.apache.commons.lang3.Validate;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/entity/ai/attributes/IAttribute.java:3: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/entity/ai/attributes/AttributeModifier.java:3: error: package io.netty.util.internal does not exist
+19:32:46 - import io.netty.util.internal.ThreadLocalRandom;
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/entity/ai/attributes/AttributeModifier.java:6: error: package org.apache.commons.lang3 does not exist
+19:32:46 - import org.apache.commons.lang3.Validate;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/entity/EntityLivingBase.java:3: error: package com.google.common.base does not exist
+19:32:46 - import com.google.common.base.Objects;
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/entity/EntityLivingBase.java:4: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Maps;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/entity/EntityLivingBase.java:11: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/entity/Entity.java:3: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Iterables;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/entity/Entity.java:4: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Lists;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/entity/Entity.java:5: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Sets;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/entity/Entity.java:12: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/entity/Entity.java:76: error: package org.apache.logging.log4j does not exist
+19:32:46 - import org.apache.logging.log4j.LogManager;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/entity/Entity.java:77: error: package org.apache.logging.log4j does not exist
+19:32:46 - import org.apache.logging.log4j.Logger;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/command/ICommandSender.java:3: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/potion/PotionEffect.java:3: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.ComparisonChain;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/potion/PotionEffect.java:6: error: package org.apache.logging.log4j does not exist
+19:32:46 - import org.apache.logging.log4j.LogManager;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/potion/PotionEffect.java:7: error: package org.apache.logging.log4j does not exist
+19:32:46 - import org.apache.logging.log4j.Logger;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/entity/ai/attributes/AbstractAttributeMap.java:3: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.HashMultimap;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/entity/ai/attributes/AbstractAttributeMap.java:4: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Maps;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/entity/ai/attributes/AbstractAttributeMap.java:5: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Multimap;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/IntIdentityHashBiMap.java:3: error: package com.google.common.base does not exist
+19:32:46 - import com.google.common.base.Predicates;
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/IntIdentityHashBiMap.java:4: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Iterators;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/IntIdentityHashBiMap.java:7: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/util/registry/RegistrySimple.java:17: error: cannot find symbol
+19:32:46 -     private static final Logger LOGGER = LogManager.getLogger();
+19:32:46 -                          ^
+19:32:46 - 
+19:32:46 -   symbol:   class Logger
+19:32:46 -   location: class RegistrySimple<K,V>
+19:32:46 -   where K,V are type-variables:
+19:32:46 -     K extends Object declared in class RegistrySimple
+19:32:46 -     V extends Object declared in class RegistrySimple
+19:32:46 - src/minecraft/net/minecraft/util/CombatTracker.java:3: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Lists;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/CombatTracker.java:5: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/item/ItemStack.java:3: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.HashMultimap;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/item/ItemStack.java:4: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Lists;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/item/ItemStack.java:5: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Multimap;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/item/ItemStack.java:10: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/entity/player/EntityPlayer.java:3: error: package com.google.common.base does not exist
+19:32:46 - import com.google.common.base.Charsets;
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/entity/player/EntityPlayer.java:4: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Lists;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/entity/player/EntityPlayer.java:5: error: package com.mojang.authlib does not exist
+19:32:46 - import com.mojang.authlib.GameProfile;
+19:32:46 -                          ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/entity/player/EntityPlayer.java:10: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/util/math/BlockPos.java:3: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.AbstractIterator;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/math/BlockPos.java:4: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Lists;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/math/BlockPos.java:7: error: package javax.annotation.concurrent does not exist
+19:32:46 - import javax.annotation.concurrent.Immutable;
+19:32:46 -                                   ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/math/BlockPos.java:10: error: package org.apache.logging.log4j does not exist
+19:32:46 - import org.apache.logging.log4j.LogManager;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/math/BlockPos.java:11: error: package org.apache.logging.log4j does not exist
+19:32:46 - import org.apache.logging.log4j.Logger;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/math/BlockPos.java:13: error: cannot find symbol
+19:32:46 - @Immutable
+19:32:46 -  ^
+19:32:46 - 
+19:32:46 -   symbol: class Immutable
+19:32:46 - src/minecraft/net/minecraft/util/DamageSource.java:3: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/world/World.java:3: error: package com.google.common.base does not exist
+19:32:46 - import com.google.common.base.Function;
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/world/World.java:4: error: package com.google.common.base does not exist
+19:32:46 - import com.google.common.base.Objects;
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/world/World.java:5: error: package com.google.common.base does not exist
+19:32:46 - import com.google.common.base.Predicate;
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/world/World.java:6: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Lists;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/world/World.java:13: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/world/IBlockAccess.java:3: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/block/state/IBlockState.java:3: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.ImmutableMap;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/IBlockProperties.java:4: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/nbt/NBTTagCompound.java:3: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Maps;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/nbt/NBTTagCompound.java:11: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/entity/ai/attributes/IAttributeInstance.java:5: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/util/math/Vec3d.java:3: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/entity/Entity.java:81: error: cannot find symbol
+19:32:46 -     private static final Logger LOGGER = LogManager.getLogger();
+19:32:46 -                          ^
+19:32:46 - 
+19:32:46 -   symbol:   class Logger
+19:32:46 -   location: class Entity
+19:32:46 - src/minecraft/net/minecraft/util/math/AxisAlignedBB.java:3: error: package com.google.common.annotations does not exist
+19:32:46 - import com.google.common.annotations.VisibleForTesting;
+19:32:46 -                                     ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/util/math/AxisAlignedBB.java:4: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/network/datasync/EntityDataManager.java:3: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Lists;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/network/datasync/EntityDataManager.java:4: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Maps;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/network/datasync/EntityDataManager.java:5: error: package io.netty.handler.codec does not exist
+19:32:46 - import io.netty.handler.codec.DecoderException;
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/network/datasync/EntityDataManager.java:6: error: package io.netty.handler.codec does not exist
+19:32:46 - import io.netty.handler.codec.EncoderException;
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/network/datasync/EntityDataManager.java:12: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/network/datasync/EntityDataManager.java:18: error: package org.apache.commons.lang3 does not exist
+19:32:46 - import org.apache.commons.lang3.ObjectUtils;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/command/CommandResultStats.java:3: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/block/Block.java:3: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Sets;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/Block.java:7: error: cannot find symbol
+19:32:46 - import javax.annotation.Nullable;
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 -   symbol:   class Nullable
+19:32:46 -   location: package javax.annotation
+19:32:46 - src/minecraft/net/minecraft/nbt/NBTTagList.java:3: error: package com.google.common.collect does not exist
+19:32:46 - import com.google.common.collect.Lists;
+19:32:46 -                                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/nbt/NBTTagList.java:8: error: package org.apache.logging.log4j does not exist
+19:32:46 - import org.apache.logging.log4j.LogManager;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/nbt/NBTTagList.java:9: error: package org.apache.logging.log4j does not exist
+19:32:46 - import org.apache.logging.log4j.Logger;
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/world/chunk/Chunk.java:353: warning: [deprecation] getChunksLowestHorizon(int,int) in World has been deprecated
+19:32:46 -                             j1 = Math.min(j1, this.worldObj.getChunksLowestHorizon(l + enumfacing.getFrontOffsetX(), i1 + enumfacing.getFrontOffsetZ()));
+19:32:46 -                                                            ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:268: warning: [deprecation] getMaterial(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.getMaterial(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:273: warning: [deprecation] isFullBlock(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.isFullBlock(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:278: warning: [deprecation] func_189872_a(IBlockState,Entity) in Block has been deprecated
+19:32:46 -             return this.block.func_189872_a(this, p_189884_1_);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:283: warning: [deprecation] getLightOpacity(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.getLightOpacity(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:288: warning: [deprecation] getLightValue(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.getLightValue(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:293: warning: [deprecation] isTranslucent(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.isTranslucent(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:298: warning: [deprecation] getUseNeighborBrightness(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.getUseNeighborBrightness(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:303: warning: [deprecation] getMapColor(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.getMapColor(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:308: warning: [deprecation] withRotation(IBlockState,Rotation) in Block has been deprecated
+19:32:46 -             return this.block.withRotation(this, rot);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:313: warning: [deprecation] withMirror(IBlockState,Mirror) in Block has been deprecated
+19:32:46 -             return this.block.withMirror(this, mirrorIn);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:318: warning: [deprecation] isFullCube(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.isFullCube(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:323: warning: [deprecation] getRenderType(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.getRenderType(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:328: warning: [deprecation] getPackedLightmapCoords(IBlockState,IBlockAccess,BlockPos) in Block has been deprecated
+19:32:46 -             return this.block.getPackedLightmapCoords(this, source, pos);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:333: warning: [deprecation] getAmbientOcclusionLightValue(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.getAmbientOcclusionLightValue(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:338: warning: [deprecation] isBlockNormalCube(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.isBlockNormalCube(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:343: warning: [deprecation] isNormalCube(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.isNormalCube(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:348: warning: [deprecation] canProvidePower(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.canProvidePower(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:353: warning: [deprecation] getWeakPower(IBlockState,IBlockAccess,BlockPos,EnumFacing) in Block has been deprecated
+19:32:46 -             return this.block.getWeakPower(this, blockAccess, pos, side);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:358: warning: [deprecation] hasComparatorInputOverride(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.hasComparatorInputOverride(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:363: warning: [deprecation] getComparatorInputOverride(IBlockState,World,BlockPos) in Block has been deprecated
+19:32:46 -             return this.block.getComparatorInputOverride(this, worldIn, pos);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:368: warning: [deprecation] getBlockHardness(IBlockState,World,BlockPos) in Block has been deprecated
+19:32:46 -             return this.block.getBlockHardness(this, worldIn, pos);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:373: warning: [deprecation] getPlayerRelativeBlockHardness(IBlockState,EntityPlayer,World,BlockPos) in Block has been deprecated
+19:32:46 -             return this.block.getPlayerRelativeBlockHardness(this, player, worldIn, pos);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:378: warning: [deprecation] getStrongPower(IBlockState,IBlockAccess,BlockPos,EnumFacing) in Block has been deprecated
+19:32:46 -             return this.block.getStrongPower(this, blockAccess, pos, side);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:383: warning: [deprecation] getMobilityFlag(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.getMobilityFlag(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:388: warning: [deprecation] getActualState(IBlockState,IBlockAccess,BlockPos) in Block has been deprecated
+19:32:46 -             return this.block.getActualState(this, blockAccess, pos);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:393: warning: [deprecation] getSelectedBoundingBox(IBlockState,World,BlockPos) in Block has been deprecated
+19:32:46 -             return this.block.getSelectedBoundingBox(this, worldIn, pos);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:398: warning: [deprecation] shouldSideBeRendered(IBlockState,IBlockAccess,BlockPos,EnumFacing) in Block has been deprecated
+19:32:46 -             return this.block.shouldSideBeRendered(this, blockAccess, pos, facing);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:403: warning: [deprecation] isOpaqueCube(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.isOpaqueCube(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:409: warning: [deprecation] getCollisionBoundingBox(IBlockState,World,BlockPos) in Block has been deprecated
+19:32:46 -             return this.block.getCollisionBoundingBox(this, worldIn, pos);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:414: warning: [deprecation] addCollisionBoxToList(IBlockState,World,BlockPos,AxisAlignedBB,List<AxisAlignedBB>,Entity) in Block has been deprecated
+19:32:46 -             this.block.addCollisionBoxToList(this, worldIn, pos, p_185908_3_, p_185908_4_, p_185908_5_);
+19:32:46 -                       ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:419: warning: [deprecation] getBoundingBox(IBlockState,IBlockAccess,BlockPos) in Block has been deprecated
+19:32:46 -             return this.block.getBoundingBox(this, blockAccess, pos);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:424: warning: [deprecation] collisionRayTrace(IBlockState,World,BlockPos,Vec3d,Vec3d) in Block has been deprecated
+19:32:46 -             return this.block.collisionRayTrace(this, worldIn, pos, start, end);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:429: warning: [deprecation] isFullyOpaque(IBlockState) in Block has been deprecated
+19:32:46 -             return this.block.isFullyOpaque(this);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:434: warning: [deprecation] func_189539_a(IBlockState,World,BlockPos,int,int) in Block has been deprecated
+19:32:46 -             return this.block.func_189539_a(this, p_189547_1_, p_189547_2_, p_189547_3_, p_189547_4_);
+19:32:46 -                              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/state/BlockStateContainer.java:439: warning: [deprecation] func_189540_a(IBlockState,World,BlockPos,Block) in Block has been deprecated
+19:32:46 -             this.block.func_189540_a(this, p_189546_1_, p_189546_2_, p_189546_3_);
+19:32:46 -                       ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/network/NetHandlerPlayServer.java:1472: warning: [deprecation] setItem(Item) in ItemStack has been deprecated
+19:32:46 -                     itemstack3.setItem(Items.WRITTEN_BOOK);
+19:32:46 -                               ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockBush.java:50: warning: [deprecation] func_189540_a(IBlockState,World,BlockPos,Block) in Block has been deprecated
+19:32:46 -     public void func_189540_a(IBlockState p_189540_1_, World p_189540_2_, BlockPos p_189540_3_, Block p_189540_4_)
+19:32:46 -                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockBush.java:52: warning: [deprecation] func_189540_a(IBlockState,World,BlockPos,Block) in Block has been deprecated
+19:32:46 -         super.func_189540_a(p_189540_1_, p_189540_2_, p_189540_3_, p_189540_4_);
+19:32:46 -              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockBush.java:75: warning: [deprecation] getBoundingBox(IBlockState,IBlockAccess,BlockPos) in Block has been deprecated
+19:32:46 -     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+19:32:46 -                          ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockBush.java:81: warning: [deprecation] getCollisionBoundingBox(IBlockState,World,BlockPos) in Block has been deprecated
+19:32:46 -     public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, World worldIn, BlockPos pos)
+19:32:46 -                          ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockBush.java:89: warning: [deprecation] isOpaqueCube(IBlockState) in Block has been deprecated
+19:32:46 -     public boolean isOpaqueCube(IBlockState state)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockBush.java:94: warning: [deprecation] isFullCube(IBlockState) in Block has been deprecated
+19:32:46 -     public boolean isFullCube(IBlockState state)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockFlower.java:51: warning: [deprecation] getStateFromMeta(int) in Block has been deprecated
+19:32:46 -     public IBlockState getStateFromMeta(int meta)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockDoublePlant.java:270: warning: [deprecation] getStateFromMeta(int) in Block has been deprecated
+19:32:46 -     public IBlockState getStateFromMeta(int meta)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockDoublePlant.java:279: warning: [deprecation] getActualState(IBlockState,IBlockAccess,BlockPos) in Block has been deprecated
+19:32:46 -     public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockRotatedPillar.java:35: warning: [deprecation] withRotation(IBlockState,Rotation) in Block has been deprecated
+19:32:46 -     public IBlockState withRotation(IBlockState state, Rotation rot)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockRotatedPillar.java:61: warning: [deprecation] getStateFromMeta(int) in Block has been deprecated
+19:32:46 -     public IBlockState getStateFromMeta(int meta)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/init/Bootstrap.java:258: warning: [deprecation] setItem(Item) in ItemStack has been deprecated
+19:32:46 -                     stack.setItem(Items.BUCKET);
+19:32:46 -                          ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/init/Bootstrap.java:300: warning: [deprecation] setItem(Item) in ItemStack has been deprecated
+19:32:46 -                     stack.setItem(item);
+19:32:46 -                          ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockGrass.java:34: warning: [deprecation] getActualState(IBlockState,IBlockAccess,BlockPos) in Block has been deprecated
+19:32:46 -     public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockLiquid.java:38: warning: [deprecation] getBoundingBox(IBlockState,IBlockAccess,BlockPos) in Block has been deprecated
+19:32:46 -     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+19:32:46 -                          ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockLiquid.java:44: warning: [deprecation] getCollisionBoundingBox(IBlockState,World,BlockPos) in Block has been deprecated
+19:32:46 -     public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, World worldIn, BlockPos pos)
+19:32:46 -                          ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockLiquid.java:78: warning: [deprecation] isFullCube(IBlockState) in Block has been deprecated
+19:32:46 -     public boolean isFullCube(IBlockState state)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockLiquid.java:86: warning: [deprecation] isOpaqueCube(IBlockState) in Block has been deprecated
+19:32:46 -     public boolean isOpaqueCube(IBlockState state)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockLiquid.java:105: warning: [deprecation] shouldSideBeRendered(IBlockState,IBlockAccess,BlockPos,EnumFacing) in Block has been deprecated
+19:32:46 -     public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockLiquid.java:107: warning: [deprecation] shouldSideBeRendered(IBlockState,IBlockAccess,BlockPos,EnumFacing) in Block has been deprecated
+19:32:46 -         return blockAccess.getBlockState(pos.offset(side)).getMaterial() == this.blockMaterial ? false : (side == EnumFacing.UP ? true : super.shouldSideBeRendered(blockState, blockAccess, pos, side));
+19:32:46 -                                                                                                                                               ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockLiquid.java:131: warning: [deprecation] getRenderType(IBlockState) in Block has been deprecated
+19:32:46 -     public EnumBlockRenderType getRenderType(IBlockState state)
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockLiquid.java:224: warning: [deprecation] getPackedLightmapCoords(IBlockState,IBlockAccess,BlockPos) in Block has been deprecated
+19:32:46 -     public int getPackedLightmapCoords(IBlockState state, IBlockAccess source, BlockPos pos)
+19:32:46 -                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockLiquid.java:313: warning: [deprecation] func_189540_a(IBlockState,World,BlockPos,Block) in Block has been deprecated
+19:32:46 -     public void func_189540_a(IBlockState p_189540_1_, World p_189540_2_, BlockPos p_189540_3_, Block p_189540_4_)
+19:32:46 -                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockLiquid.java:372: warning: [deprecation] getStateFromMeta(int) in Block has been deprecated
+19:32:46 -     public IBlockState getStateFromMeta(int meta)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockFalling.java:33: warning: [deprecation] func_189540_a(IBlockState,World,BlockPos,Block) in Block has been deprecated
+19:32:46 -     public void func_189540_a(IBlockState p_189540_1_, World p_189540_2_, BlockPos p_189540_3_, Block p_189540_4_)
+19:32:46 -                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockSand.java:46: warning: [deprecation] getMapColor(IBlockState) in Block has been deprecated
+19:32:46 -     public MapColor getMapColor(IBlockState state)
+19:32:46 -                     ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockSand.java:54: warning: [deprecation] getStateFromMeta(int) in Block has been deprecated
+19:32:46 -     public IBlockState getStateFromMeta(int meta)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockLeaves.java:265: warning: [deprecation] isOpaqueCube(IBlockState) in Block has been deprecated
+19:32:46 -     public boolean isOpaqueCube(IBlockState state)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockLeaves.java:290: warning: [deprecation] shouldSideBeRendered(IBlockState,IBlockAccess,BlockPos,EnumFacing) in Block has been deprecated
+19:32:46 -     public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockLeaves.java:292: warning: [deprecation] shouldSideBeRendered(IBlockState,IBlockAccess,BlockPos,EnumFacing) in Block has been deprecated
+19:32:46 -         return !this.leavesFancy && blockAccess.getBlockState(pos.offset(side)).getBlock() == this ? false : super.shouldSideBeRendered(blockState, blockAccess, pos, side);
+19:32:46 -                                                                                                                   ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonBase.java:55: warning: [deprecation] getBoundingBox(IBlockState,IBlockAccess,BlockPos) in Block has been deprecated
+19:32:46 -     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+19:32:46 -                          ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonBase.java:90: warning: [deprecation] isFullyOpaque(IBlockState) in Block has been deprecated
+19:32:46 -     public boolean isFullyOpaque(IBlockState state)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonBase.java:95: warning: [deprecation] addCollisionBoxToList(IBlockState,World,BlockPos,AxisAlignedBB,List<AxisAlignedBB>,Entity) in Block has been deprecated
+19:32:46 -     public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn)
+19:32:46 -                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonBase.java:103: warning: [deprecation] isOpaqueCube(IBlockState) in Block has been deprecated
+19:32:46 -     public boolean isOpaqueCube(IBlockState state)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonBase.java:121: warning: [deprecation] func_189540_a(IBlockState,World,BlockPos,Block) in Block has been deprecated
+19:32:46 -     public void func_189540_a(IBlockState p_189540_1_, World p_189540_2_, BlockPos p_189540_3_, Block p_189540_4_)
+19:32:46 -                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonBase.java:194: warning: [deprecation] func_189539_a(IBlockState,World,BlockPos,int,int) in Block has been deprecated
+19:32:46 -     public boolean func_189539_a(IBlockState p_189539_1_, World p_189539_2_, BlockPos p_189539_3_, int p_189539_4_, int p_189539_5_)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonBase.java:275: warning: [deprecation] isFullCube(IBlockState) in Block has been deprecated
+19:32:46 -     public boolean isFullCube(IBlockState state)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonBase.java:446: warning: [deprecation] getStateFromMeta(int) in Block has been deprecated
+19:32:46 -     public IBlockState getStateFromMeta(int meta)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonBase.java:471: warning: [deprecation] withRotation(IBlockState,Rotation) in Block has been deprecated
+19:32:46 -     public IBlockState withRotation(IBlockState state, Rotation rot)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonBase.java:480: warning: [deprecation] withMirror(IBlockState,Mirror) in Block has been deprecated
+19:32:46 -     public IBlockState withMirror(IBlockState state, Mirror mirrorIn)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockTallGrass.java:132: warning: [deprecation] getStateFromMeta(int) in Block has been deprecated
+19:32:46 -     public IBlockState getStateFromMeta(int meta)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockDeadBush.java:37: warning: [deprecation] getMapColor(IBlockState) in Block has been deprecated
+19:32:46 -     public MapColor getMapColor(IBlockState state)
+19:32:46 -                     ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonExtension.java:50: warning: [deprecation] getBoundingBox(IBlockState,IBlockAccess,BlockPos) in Block has been deprecated
+19:32:46 -     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+19:32:46 -                          ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonExtension.java:75: warning: [deprecation] addCollisionBoxToList(IBlockState,World,BlockPos,AxisAlignedBB,List<AxisAlignedBB>,Entity) in Block has been deprecated
+19:32:46 -     public void addCollisionBoxToList(IBlockState state, World worldIn, BlockPos pos, AxisAlignedBB entityBox, List<AxisAlignedBB> collidingBoxes, @Nullable Entity entityIn)
+19:32:46 -                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonExtension.java:109: warning: [deprecation] isFullyOpaque(IBlockState) in Block has been deprecated
+19:32:46 -     public boolean isFullyOpaque(IBlockState state)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonExtension.java:147: warning: [deprecation] isOpaqueCube(IBlockState) in Block has been deprecated
+19:32:46 -     public boolean isOpaqueCube(IBlockState state)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonExtension.java:152: warning: [deprecation] isFullCube(IBlockState) in Block has been deprecated
+19:32:46 -     public boolean isFullCube(IBlockState state)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonExtension.java:178: warning: [deprecation] func_189540_a(IBlockState,World,BlockPos,Block) in Block has been deprecated
+19:32:46 -     public void func_189540_a(IBlockState p_189540_1_, World p_189540_2_, BlockPos p_189540_3_, Block p_189540_4_)
+19:32:46 -                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonExtension.java:194: warning: [deprecation] shouldSideBeRendered(IBlockState,IBlockAccess,BlockPos,EnumFacing) in Block has been deprecated
+19:32:46 -     public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonExtension.java:214: warning: [deprecation] getStateFromMeta(int) in Block has been deprecated
+19:32:46 -     public IBlockState getStateFromMeta(int meta)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonExtension.java:239: warning: [deprecation] withRotation(IBlockState,Rotation) in Block has been deprecated
+19:32:46 -     public IBlockState withRotation(IBlockState state, Rotation rot)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonExtension.java:248: warning: [deprecation] withMirror(IBlockState,Mirror) in Block has been deprecated
+19:32:46 -     public IBlockState withMirror(IBlockState state, Mirror mirrorIn)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockContainer.java:38: warning: [deprecation] getRenderType(IBlockState) in Block has been deprecated
+19:32:46 -     public EnumBlockRenderType getRenderType(IBlockState state)
+19:32:46 -                                ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockContainer.java:49: warning: [deprecation] func_189539_a(IBlockState,World,BlockPos,int,int) in Block has been deprecated
+19:32:46 -     public boolean func_189539_a(IBlockState p_189539_1_, World p_189539_2_, BlockPos p_189539_3_, int p_189539_4_, int p_189539_5_)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockContainer.java:51: warning: [deprecation] func_189539_a(IBlockState,World,BlockPos,int,int) in Block has been deprecated
+19:32:46 -         super.func_189539_a(p_189539_1_, p_189539_2_, p_189539_3_, p_189539_4_, p_189539_5_);
+19:32:46 -              ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonMoving.java:96: warning: [deprecation] isOpaqueCube(IBlockState) in Block has been deprecated
+19:32:46 -     public boolean isOpaqueCube(IBlockState state)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonMoving.java:101: warning: [deprecation] isFullCube(IBlockState) in Block has been deprecated
+19:32:46 -     public boolean isFullCube(IBlockState state)
+19:32:46 -                    ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonMoving.java:149: warning: [deprecation] collisionRayTrace(IBlockState,World,BlockPos,Vec3d,Vec3d) in Block has been deprecated
+19:32:46 -     public RayTraceResult collisionRayTrace(IBlockState blockState, World worldIn, BlockPos pos, Vec3d start, Vec3d end)
+19:32:46 -                           ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonMoving.java:154: warning: [deprecation] func_189540_a(IBlockState,World,BlockPos,Block) in Block has been deprecated
+19:32:46 -     public void func_189540_a(IBlockState p_189540_1_, World p_189540_2_, BlockPos p_189540_3_, Block p_189540_4_)
+19:32:46 -                 ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonMoving.java:163: warning: [deprecation] getCollisionBoundingBox(IBlockState,World,BlockPos) in Block has been deprecated
+19:32:46 -     public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, World worldIn, BlockPos pos)
+19:32:46 -                          ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonMoving.java:169: warning: [deprecation] getBoundingBox(IBlockState,IBlockAccess,BlockPos) in Block has been deprecated
+19:32:46 -     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+19:32:46 -                          ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonMoving.java:195: warning: [deprecation] getStateFromMeta(int) in Block has been deprecated
+19:32:46 -     public IBlockState getStateFromMeta(int meta)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - src/minecraft/net/minecraft/block/BlockPistonMoving.java:204: warning: [deprecation] withRotation(IBlockState,Rotation) in Block has been deprecated
+19:32:46 -     public IBlockState withRotation(IBlockState state, Rotation rot)
+19:32:46 -                        ^
+19:32:46 - 
+19:32:46 - 100 errors
+19:32:46 - 100 warnings
+19:32:46 - ==================
+19:32:46 - 
+19:32:46 - !! Can not find server sources, try decompiling !!
+19:34:05 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+19:35:32 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+19:36:20 - !! Can not find server sources, try decompiling !!
+10:50:06 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+10:57:24 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+10:57:56 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+10:58:18 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+11:02:24 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+11:03:41 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+11:06:19 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+11:06:50 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+11:06:59 - !! Can not find client md5s !!
+11:06:59 - !! Can not find server md5s !!
+11:07:41 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+11:09:00 - !! Can not find server sources, try decompiling !!
+11:12:59 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+11:13:57 - !! Can not find server sources, try decompiling !!
+11:18:00 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+11:18:08 - !! Can not find client md5s !!
+11:18:08 - !! Can not find server md5s !!
+11:18:27 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+11:19:18 - !! Can not find server sources, try decompiling !!
+11:19:24 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+11:19:55 - !! Can not find server md5s !!
+19:09:03 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+19:09:03 - !! Can not find server md5s !!
+19:23:59 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+19:24:01 - !! Can not find server md5s !!

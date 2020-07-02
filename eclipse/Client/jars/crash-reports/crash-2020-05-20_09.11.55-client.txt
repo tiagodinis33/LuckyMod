@@ -1,0 +1,56 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 20-05-2020 9:11
+Description: Initializing game
+
+java.lang.IllegalArgumentException: Cannot store java.lang.Object in an array of net.minecraft.client.settings.KeyBinding
+	at org.apache.commons.lang3.ArrayUtils.addAll(ArrayUtils.java:3737)
+	at net.minecraft.client.settings.GameSettings.<init>(GameSettings.java:283)
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:500)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:431)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+Caused by: java.lang.ArrayStoreException
+	at java.lang.System.arraycopy(Native Method)
+	at org.apache.commons.lang3.ArrayUtils.addAll(ArrayUtils.java:3727)
+	... 5 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at org.apache.commons.lang3.ArrayUtils.addAll(ArrayUtils.java:3737)
+	at net.minecraft.client.settings.GameSettings.<init>(GameSettings.java:283)
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:500)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.Minecraft.run(Minecraft.java:431)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.10
+	Operating System: Linux (amd64) version 5.3.0-51-generic
+	Java Version: 1.8.0_252, Private Build
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+	Memory: 759693312 bytes (724 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Launched Version: 1.10
+	LWJGL: 2.9.4
+	OpenGL: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
+	GL Caps: 
+	Using VBOs: ~~ERROR~~ NullPointerException: null
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: ~~ERROR~~ NullPointerException: null
+	Current Language: ~~ERROR~~ NullPointerException: null
+	Profiler Position: N/A (disabled)
+	CPU: <unknown>

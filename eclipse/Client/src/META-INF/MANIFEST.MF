@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Main-Class: 
+Class-Path: 1.10.jar oshi-core-1.1.jar authlib-1.5.22.jar netty-all-4.0.
+ 23.Final.jar librarylwjglopenal-20100824.jar codecwav-20101023.jar comm
+ ons-io-2.4.jar fastutil-7.0.12_mojang.jar jsr305-3.0.1.jar jutils-1.0.0
+ .jar lwjgl-2.9.4-nightly-20150209.jar log4j-api-2.0-beta9.jar lwjgl_uti
+ l-2.9.4-nightly-20150209.jar libraryjavasound-20101123.jar codecjorbis-
+ 20101023.jar httpcore-4.3.2.jar guava-17.0.jar log4j-core-2.0-beta9.jar
+  jna-3.4.0.jar gson-2.2.4.jar jinput-2.0.5.jar jopt-simple-4.6.jar comm
+ ons-codec-1.9.jar httpclient-4.3.3.jar commons-compress-1.8.1.jar icu4j
+ -core-mojang-51.2.jar netty-1.6.jar platform-3.4.0.jar realms-1.9.0.jar
+  commons-logging-1.1.3.jar soundsystem-20120107.jar commons-lang3-3.3.2
+ .jar
+

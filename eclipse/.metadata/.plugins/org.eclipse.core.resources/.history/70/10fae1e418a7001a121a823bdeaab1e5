@@ -1,0 +1,5 @@
+package cz.adamh.utils;
+
+public class NativeUtils {
+
+}

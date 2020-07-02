@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.texture.TextureManager"/>
+<fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.Tessellator"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="net.minecraft.client.settings.GameSettings.Options"/>
+<fullyQualifiedTypeName name="com.google.gson.JsonObject"/>
+<fullyQualifiedTypeName name="org.luckymod.guis.LuckyModOptions"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiButton"/>
+<fullyQualifiedTypeName name="net.minecraft.world.BossInfo.Color"/>
+<fullyQualifiedTypeName name="net.minecraft.world.GameType"/>
+<fullyQualifiedTypeName name="net.minecraft.network.play.server.SPacketEffect"/>
+<fullyQualifiedTypeName name="net.minecraft.network.play.server.SPacketEntityEffect"/>
+<fullyQualifiedTypeName name="net.minecraft.potion.PotionEffect"/>
+<fullyQualifiedTypeName name="net.minecraft.init.MobEffects"/>
+<fullyQualifiedTypeName name="net.minecraft.client.settings.KeyBinding"/>
+<fullyQualifiedTypeName name="org.lwjgl.input.Mouse"/>
+<fullyQualifiedTypeName name="org.lwjgl.util.vector.Vector2f"/>
+<fullyQualifiedTypeName name="org.lwjgl.util.vector.Vector3f"/>
+<fullyQualifiedTypeName name="club.minnced.discord.rpc.DiscordEventHandlers"/>
+<fullyQualifiedTypeName name="club.minnced.discord.rpc.DiscordRichPresence"/>
+<fullyQualifiedTypeName name="org.apache.logging.log4j.LogManager"/>
+<fullyQualifiedTypeName name="org.luckymod.discord.LuckyModPresence"/>
+<fullyQualifiedTypeName name="org.luckymod.discord.RPCManager"/>
+<fullyQualifiedTypeName name="com.sun.jna.Native"/>
+<fullyQualifiedTypeName name="club.minnced.discord.rpc.DiscordRPC"/>
+<fullyQualifiedTypeName name="net.arikia.dev.drpc.DiscordRPC"/>
+<fullyQualifiedTypeName name="net.arikia.dev.drpc.DiscordEventHandlers"/>
+<fullyQualifiedTypeName name="net.arikia.dev.drpc.callbacks.JoinGameCallback"/>
+<fullyQualifiedTypeName name="net.minecraft.network.login.server.SPacketDisconnect"/>
+<fullyQualifiedTypeName name="net.minecraft.network.play.server.SPacketDisconnect"/>
+<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiMultiplayer"/>
+<fullyQualifiedTypeName name="net.minecraft.client.multiplayer.ServerData"/>
+<fullyQualifiedTypeName name="net.arikia.dev.drpc.DiscordRichPresence"/>
+<fullyQualifiedTypeName name="net.arikia.dev.drpc.DiscordEventHandlers.Builder"/>
+</qualifiedTypeNameHistroy>

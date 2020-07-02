@@ -1,0 +1,70 @@
+package test;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+import java.time.Instant;
+
+import de.jcm.discordgamesdk.Core;
+import de.jcm.discordgamesdk.CreateParams;
+import de.jcm.discordgamesdk.activity.Activity;
+import de.jcm.discordgamesdk.activity.ActivityType;
+import de.jcm.discordgamesdk.user.DiscordUser;
+
+
+public class Main {
+	public static void main(String[] args) {
+		InputStream libDll = Main.class.getResourceAsStream("/natives/discord_game_sdk/discord_game_sdk.dll");
+		InputStream liblinux =
+				Main.class.getResourceAsStream("/natives/discord_game_sdk/discord_game_sdk.so");
+		
+		File dir = new File("natives/");
+		dir.mkdir();
+		dir.deleteOnExit();
+		File extractedLib = new File("natives/discord_game_sdk.so");
+		/*try {
+			Files.copy(System.getProperty("os.name").equalsIgnoreCase("Linux")? liblinux : libDll, Paths.get(extractedLib.toURI()), StandardCopyOption.REPLACE_EXISTING);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}*/
+		extractedLib.deleteOnExit();
+		Core.init(extractedLib);
+		try(CreateParams params = new CreateParams())
+		{
+		    params.setClientID(718033700733976596L);
+		    params.setFlags(CreateParams.getDefaultFlags());
+
+		    try(Core core = new Core(params))
+		    {
+		    	DiscordUser user = core.userManager().getCurrentUser();
+		    	System.out.println(user.getUsername() + "#" + user.getDiscriminator());
+		    	Activity activity = new Activity();
+		    	activity.assets().setLargeImage("logo");
+		    	activity.assets().setLargeText("LuckyMod");
+		    	activity.setType(ActivityType.PLAYING);
+		    	activity.setState("Teste");
+		    	activity.timestamps().setStart(Instant.now());
+		    	core.activityManager().updateActivity(activity);
+		    	while(true) {
+		    		core.runCallbacks();
+		    		try {
+						Thread.sleep(2000);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+		    	}
+		    }catch (Exception e) {
+				e.printStackTrace();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

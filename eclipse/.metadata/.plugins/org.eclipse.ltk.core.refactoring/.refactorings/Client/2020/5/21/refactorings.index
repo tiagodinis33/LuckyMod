@@ -1,0 +1,11 @@
+1589794668839	Rename field 'clicksPerSec1'
+1589794769639	Rename field 'clicksPerSec2'
+1589814115294	Delete element
+1589814272075	Delete element
+1589814577317	Delete element
+1589816764383	Rename enum constant 'BACKGROUND_FILE'
+1589816777237	Rename field 'backgroundPath'
+1589819767724	Rename local variable 'someChanged'
+1589838597783	Rename method 'drawScreen'
+1589919702864	Rename local variable 'key2'
+1589927458668	Delete element

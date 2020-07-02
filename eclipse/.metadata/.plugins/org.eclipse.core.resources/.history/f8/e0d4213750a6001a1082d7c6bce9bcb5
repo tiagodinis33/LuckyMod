@@ -1,0 +1,16 @@
+package org.luckymod.discord;
+
+import club.minnced.discord.rpc.DiscordRPC;
+
+public class RPCManager {
+	static DiscordRPC rpc = DiscordRPC.INSTANCE;
+	private static boolean isRunning;
+	static {
+		if(!isRunning) {
+			
+		}
+	}
+	private static void loop() {
+		
+	}
+}

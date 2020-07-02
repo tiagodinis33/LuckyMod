@@ -1,0 +1,102 @@
+---- Minecraft Crash Report ----
+// Would you like a cupcake?
+
+Time: 02-06-2020 15:29
+Description: Ticking entity
+
+java.lang.NullPointerException: Ticking entity
+	at net.minecraft.entity.EntityLivingBase.onLivingUpdate(EntityLivingBase.java:2361)
+	at net.minecraft.entity.EntityLiving.onLivingUpdate(EntityLiving.java:666)
+	at net.minecraft.entity.EntityAgeable.onLivingUpdate(EntityAgeable.java:178)
+	at net.minecraft.entity.passive.EntityAnimal.onLivingUpdate(EntityAnimal.java:45)
+	at net.minecraft.entity.passive.EntityChicken.onLivingUpdate(EntityChicken.java:86)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2238)
+	at net.minecraft.entity.EntityLiving.onUpdate(EntityLiving.java:367)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1970)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:858)
+	at net.minecraft.world.World.updateEntity(World.java:1940)
+	at net.minecraft.world.World.updateEntities(World.java:1790)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:633)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:781)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:691)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:240)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:554)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.entity.EntityLivingBase.onLivingUpdate(EntityLivingBase.java:2361)
+	at net.minecraft.entity.EntityLiving.onLivingUpdate(EntityLiving.java:666)
+	at net.minecraft.entity.EntityAgeable.onLivingUpdate(EntityAgeable.java:178)
+	at net.minecraft.entity.passive.EntityAnimal.onLivingUpdate(EntityAnimal.java:45)
+	at net.minecraft.entity.passive.EntityChicken.onLivingUpdate(EntityChicken.java:86)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2238)
+	at net.minecraft.entity.EntityLiving.onUpdate(EntityLiving.java:367)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1970)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:858)
+	at net.minecraft.world.World.updateEntity(World.java:1940)
+
+-- Entity being ticked --
+Details:
+	Entity Type: Chicken (net.minecraft.entity.passive.EntityChicken)
+	Entity ID: 9
+	Entity Name: Galinha
+	Entity's Exact location: 31,68, 4,00, -510,03
+	Entity's Block location: World: (31,4,-511), Chunk: (at 15,0,1 in 1,-32; contains blocks 16,0,-512 to 31,255,-497), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Entity's Momentum: -0,07, -0,08, -0,02
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1790)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:633)
+
+-- Affected level --
+Details:
+	Level name: Novo Mundo
+	All players: 0 total; []
+	Chunk stats: ServerChunkCache: 625 Drop: 0
+	Level seed: 1206194397165610799
+	Level generator: ID 01 - flat, ver 0. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (69,4,-582), Chunk: (at 5,0,10 in 4,-37; contains blocks 64,0,-592 to 79,255,-577), Region: (0,-2; contains chunks 0,-64 to 31,-33, blocks 0,0,-1024 to 511,255,-513)
+	Level time: 70905 game time, 29876 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 92398 (now: false), thunder time: 2804 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:781)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:691)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:240)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:554)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.10
+	Operating System: Linux (amd64) version 5.3.0-55-generic
+	Java Version: 1.8.0_252, Private Build
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+	Memory: 902098584 bytes (860 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 8; []
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Very likely; Jar signature invalidated
+	OptiFine Version: OptiFine_1.10_HD_U_C1
+	Render Distance Chunks: 4
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 3.0 Mesa 19.2.8
+	OpenGlRenderer: Mesa DRI Intel(R) HD Graphics 405 (Braswell) 
+	OpenGlVendor: Intel Open Source Technology Center
+	CpuCount: 4

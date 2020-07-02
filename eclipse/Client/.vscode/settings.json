@@ -1,0 +1,15 @@
+{
+    "java.dependency.syncWithFolderExplorer": true,
+    "java.dependency.packagePresentation": "hierarchical",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "bin": true,
+        "logs": true,
+        ".*": true
+        
+    }
+}
